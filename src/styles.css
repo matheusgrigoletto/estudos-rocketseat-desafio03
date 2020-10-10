@@ -1,16 +1,24 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 0 none;
   box-sizing: border-box;
 }
 
 body {
-  font-size: 14px;
+  background: #333;
+  font: 14px Helvetica, Arial, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+a {
+  color: #fff;
 }
 
 div {
   width: 100%;
-  margin: 20px;
+  padding: 20px;
 }
 
 div li {
@@ -26,14 +34,25 @@ button {
   background: #7159c1;
   color: #fff;
   border: 0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   padding: 10px 15px;
   cursor: pointer;
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  transition: all 0.2s linear;
+}
+
+button:hover,
+button:focus,
+button:active {
+  transform: scale(1.07);
 }
 
 div li button {
   margin: 0 15px;
-  background: #ca4949;
+  background: #b33636;
+  font-size: 12px;
+  padding: 6px 8px;
 }
